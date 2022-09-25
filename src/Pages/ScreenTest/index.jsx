@@ -1,5 +1,5 @@
-import { Button } from "../../Components/Button"
+import { Input } from "../../Components/Input"
 
 export const ScreenTest = () =>{
-    return<Button >Login</Button>
+    return<Input/>
 }
