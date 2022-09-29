@@ -10,7 +10,7 @@ export const Global = createGlobalStyle`
     }
 
     body{
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', sans-serif;        
     }
 
     :root{
@@ -22,6 +22,7 @@ export const Global = createGlobalStyle`
         --grey-600:#333333;
         --grey-300:#828282;
         --grey-100: #e0e0e0;
+        --grey-50: #999999;
         --grey-0: #f5f5f5;
 
         /* feedback palette*/

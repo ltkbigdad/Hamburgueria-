@@ -1,14 +1,11 @@
-import { Container, InputContainer } from ".style";
+import { Container, InputContainer } from "./style";
+import {Button} from "../Button"
 
-export const Input = ({ label, icon: Icon, register, name, error, ...rest}) => {
+export const Input = ({ label,  register, name, error, ...rest}) => {
     return (
-        <Container>
-            <label>{label}</label>
-            <InputContainer isErrored={!!error}>
-                {Icon && <Icon size={14}/>}
-                <input {...register(name)} {...rest} />
-            </InputContainer>
-            <div>{!!error && <span>{error}</span>}</div>
+        <Container>                     
+            <input /*{...register(name)}*/ {...rest} />           
+            <label>{label} {!!error && <span> - {error}</span>}</label>           
         </Container>
     );
 }
