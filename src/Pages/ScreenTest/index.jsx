@@ -1,5 +1,13 @@
-import { Button } from "../../Components/Button"
+import { Input } from "../../Components/Input"
 
 export const ScreenTest = () =>{
-    return<Button >Login</Button>
+    return<Input 
+    // register={register}
+    name="password"    
+    label="Senha"    
+    type="text"
+    placeholder=" "
+    required=""
+    // error={errors.password?.message}
+    />
 }
