@@ -1,7 +1,8 @@
-import { Input } from "../../Components/Input"
+
+import { SearchInput } from "../../Components/SearchInput"
 
 export const ScreenTest = () =>{
-    return<Input 
+    return<SearchInput 
     // register={register}
     name="password"    
     label="Senha"    
