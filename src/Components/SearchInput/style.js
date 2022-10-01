@@ -35,6 +35,7 @@ export const Container = styled.div`
     height: 40px;
     margin-left: 10px;
     border-radius: 8px;
+    
   }
 
   /* input:focus{

@@ -1,18 +1,16 @@
 import { Container } from "./style";
-import {Button} from "../Button"
 import {BsSearch} from "react-icons/bs"
+import {Button} from "../Button"
 
 export const SearchInput = ({ icon:Icon, name, error, ...rest}) => {
     return (
         <Container>                     
             <input {...rest} />
-            <div>
-                <Button default>
-                    <i >{BsSearch}</i>  
+            <div> 
+                <Button default >
+                   <BsSearch/>
                 </Button> 
-            </div>    
-                 
-                      
+            </div>     
         </Container>
     );
 }
