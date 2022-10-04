@@ -1,4 +1,5 @@
 import { Container, ImgContainer, Content } from "./style"
+import {Button} from "../Button"
 
 export const CardProduct = ({id, img, nome, category, price, currentSale, setCurrentSale}) => { 
                  
@@ -11,13 +12,15 @@ export const CardProduct = ({id, img, nome, category, price, currentSale, setCur
                 <p className="card_title">{nome}</p>
                 <p className="cat_title">{category}</p>
                 <p className="price">{price}</p>
-                <button 
+                <Button 
+                    className="buttonAdd"
+                    default
                     onClick={() => {
                         setCurrentSale(currentSale.filter((elem) => elem.name !== nome));
                     }}
                 >
                     Adicionar
-                </button>
+                </Button>
             </Content>
         </Container>
     )
