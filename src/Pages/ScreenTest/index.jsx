@@ -1,14 +1,29 @@
 
-import { SearchInput } from "../../Components/SearchInput"
+import { CartCard } from "../../Components/CartCard"
+import { ProductsContext } from "../../provider/Products"
+import { useContext } from "react"
 
 export const ScreenTest = () =>{
-    return<SearchInput 
-    // register={register}
-    name="password"    
-    label="Senha"    
-    type="text"
-    placeholder=" "
-    required=""
-    // error={errors.password?.message}
-    />
+
+    const product = useContext(ProductsContext);
+  
+    return(
+        <>
+            {product.map((item)=>{
+                return(<CartCard
+                    key={item.id}
+                    img={item.img}
+                    nome={item.nome}
+                />)
+            })
+
+            }
+        </>
+         
+    )
+    
+    
+
+
+
 }
