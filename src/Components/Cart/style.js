@@ -29,8 +29,14 @@ export const TittleContainer = styled.div`
         color: #FFFFFF;
     }
 
-    p{
+    .closedButton{
+        background: none;
+        border: none;
         color: #FFFFFF;
+        cursor: pointer;
+        :hover{
+            color:#828282;
+        }
     }
 `;
 

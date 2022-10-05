@@ -5,7 +5,7 @@ export const Cart = () =>{
         <Container>
             <TittleContainer>
                 <h2 className="cartTittle">Carrinho de compras</h2>
-                <p>X</p>
+                <button className="closedButton">X</button>
             </TittleContainer>
             <CartContainer>
                 <p className="bagEmpty">Sua sacola está vazia</p>
