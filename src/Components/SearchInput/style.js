@@ -34,7 +34,10 @@ export const Container = styled.div`
     width: 54px;
     height: 40px;
     margin-left: 10px;
+
     border-radius: 8px;    
+
+
   }
 
   /* input:focus{
