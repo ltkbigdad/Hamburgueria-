@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 position: absolute;
 display: inline-block;
-width: 31.25em;
+width: 23.25em;
 border-radius: 0.31em;
 `;
 
